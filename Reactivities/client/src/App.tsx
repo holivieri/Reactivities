@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react'
+import { Fragment, useEffect, useState } from 'react'
 import './App.css'
+import { List, ListItem, ListItemText, Typography } from '@mui/material';
 
 function App() {
   const [activities, setActivities] = useState<Activity[]>([]);
@@ -13,14 +14,16 @@ function App() {
   }, []);
 
   return (
-    <div>
-        <h3 className='App' style={{color: 'orange'}}>Reactivities</h3>
-        <ul>
+    <Fragment>
+        <Typography variant='h3' style={{color: 'orange'}}>Reactivities</Typography>
+        <List>
           {activities.map((activity) => (
-            <li key={activity.id}>{activity.title}</li>
+            <ListItem key={activity.id}>
+              <ListItemText>{activity.title}</ListItemText>
+            </ListItem>
           ))}
-        </ul>
-    </div>
+        </List>
+    </Fragment>
   )
 }
 
