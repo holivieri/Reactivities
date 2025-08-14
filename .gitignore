@@ -1,0 +1,113 @@
+########################################
+# .NET build and system files
+########################################
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+**/launchSettings.json
+
+# Visual Studio cache/options
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Generated files
+Generated_Code/
+
+# Debug/release configurations
+*.dbmdl
+*.pdb
+*.mdb
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Publish output
+publish/
+app.publish/
+*.Publish.xml
+*.PublishSettings
+
+# NuGet packages
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build/
+*.nuspec
+*.psmdcp
+*.PackageReferenceProps
+
+# Azure build artifacts
+csx/
+*.build.csdef
+*.azurePubxml
+
+# SQL Server files
+*.mdf
+*.ldf
+
+########################################
+# Node.js / React build and config files
+########################################
+# Dependencies
+**/node_modules/
+
+# Production build
+**/build/
+**/dist/
+
+# Local env files
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# Debug log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor config
+.vscode/
+.idea/
+*.swp
+
+# Cache
+.cache/
+.next/
+out/
+.tmp/
+temp/
+*.tmp
+*.temp
+.DS_Store
+
+# Testing
+coverage/
+*.lcov
+
+# Misc
+*.tsbuildinfo
+
+########################################
+# OS-specific
+########################################
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
